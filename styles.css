@@ -41,5 +41,5 @@
   position: fixed;
   bottom: 0;
   height: 12.5rem;
-  max-width: 100px;
+  width: auto;
 }
