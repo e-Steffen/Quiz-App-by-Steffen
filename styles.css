@@ -9,10 +9,39 @@
   display: flex;
   border: 0.1875rem solid black;
   position: fixed;
-  width: 90%;
-  margin-left: 5%;
+  width: 98%;
+  left: 1%;
   justify-content: center;
+  z-index: 3;
 }
 .app-Title p {
   font-size: 32px;
+}
+
+.card-frame {
+  display: flex;
+  position: relative;
+  align-items: center;
+  height: 1000px;
+  width: 90%;
+  left: 5%;
+  justify-items: center;
+}
+
+.cards {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  position: relative;
+  width: 2000px;
+  top: 20%;
+  border: 0.1875rem solid black;
+  height: 20rem;
+}
+
+.navi {
+  position: fixed;
+  bottom: 0;
+  height: 12.5rem;
+  max-width: 100px;
 }
