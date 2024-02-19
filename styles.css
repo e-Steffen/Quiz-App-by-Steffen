@@ -7,38 +7,36 @@
 
 .app-Title {
   display: flex;
-  border: 0.1875rem solid black;
+  background-color: black;
   position: fixed;
   width: 98%;
   left: 1%;
   justify-content: center;
-  z-index: 2;
+  font-size: 3.5rem;
+  color: rgb(201, 232, 232);
+  padding: 0.8rem;
 }
 
 .app-Title p {
   font-size: 3.5rem;
 }
 
-.cards p {
-  font-size: 32px;
-}
-
 .card-frame {
   display: flex;
   flex-direction: column;
-  position: relative;
-  top: 150px;
-  width: 90%;
-  margin-left: 5%;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  align-items: center;
 }
 
 .cards {
   display: grid;
-  justify-content: center;
-  position: relative;
   border: 0.1875rem solid black;
-  height: 20rem;
-  margin: 50px;
+  height: 22rem;
+  width: 45%;
+  margin-top: 9%;
+  padding: 2rem;
+  position: relative;
 }
 
 .cards p {
@@ -50,15 +48,19 @@
   font-size: 2rem;
   font-weight: 800;
   color: rgb(37, 18, 96);
-  margin-bottom: 1rem;
+}
+
+.bookmark {
+  position: absolute;
+  right: -1rem;
 }
 
 .navi {
   display: inline-flex;
-  position: fixed;
-  bottom: 0;
-  height: 8.5rem;
-  width: 90%;
-  margin: 5%;
+  position: absolute;
+  bottom: 5px;
+  width: 80%;
+  margin-left: 10%;
+  margin-right: 10%;
   justify-content: space-between;
 }
