@@ -12,9 +12,14 @@
   width: 98%;
   left: 1%;
   justify-content: center;
-  z-index: 3;
+  z-index: 2;
 }
+
 .app-Title p {
+  font-size: 3.5rem;
+}
+
+.cards p {
   font-size: 32px;
 }
 
@@ -28,18 +33,32 @@
 }
 
 .cards {
-  display: flex;
+  display: grid;
   justify-content: center;
   position: relative;
-
   border: 0.1875rem solid black;
   height: 20rem;
   margin: 50px;
 }
 
+.cards p {
+  font-size: 2.5rem;
+  font-weight: 700;
+}
+
+.button {
+  font-size: 2rem;
+  font-weight: 800;
+  color: rgb(37, 18, 96);
+  margin-bottom: 1rem;
+}
+
 .navi {
+  display: inline-flex;
   position: fixed;
   bottom: 0;
-  height: 12.5rem;
-  width: auto;
+  height: 8.5rem;
+  width: 90%;
+  margin: 5%;
+  justify-content: space-between;
 }
