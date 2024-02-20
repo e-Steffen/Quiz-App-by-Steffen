@@ -51,13 +51,6 @@ body {
   font-weight: 700;
 }
 
-.button {
-  font-size: 2rem;
-  font-weight: 800;
-  color: rgb(64, 29, 169);
-  cursor: pointer;
-}
-
 .bookmark {
   position: absolute;
   right: -1rem;
@@ -72,10 +65,16 @@ body {
   width: 4rem;
 }
 
+.button {
+  font-size: 2rem;
+  font-weight: 800;
+  color: rgb(64, 29, 169);
+  cursor: pointer;
+}
+
 .tags {
   display: flex;
-  justify-content: flex-start;
-  width: 100%;
+  margin-top: 2rem;
 }
 
 .tags li {
@@ -86,9 +85,10 @@ body {
   margin-right: 1rem;
   justify-content: center;
   border-radius: 10%;
+  font-size: 1.2rem;
 }
 
-.navi {
+nav {
   display: inline-flex;
   position: fixed;
   bottom: 0;
@@ -109,7 +109,6 @@ body {
   flex-wrap: wrap;
   position: relative;
   padding-top: 10rem;
-
   margin-inline: auto;
   justify-content: flext-start;
   align-items: center;
@@ -117,14 +116,14 @@ body {
 
 .about-me p {
   color: rgb(64, 29, 169);
-  font-size: 1.5rem;
+  font-size: 2rem;
 }
 
 .about-me li {
   list-style: none;
   display: inline-flex;
   padding-right: 1.5rem;
-  font-size: 1rem;
+  font-size: 1.5rem;
 }
 
 .settings {
@@ -132,7 +131,7 @@ body {
 }
 
 h2 {
-  font-size: 1rem;
+  font-size: 1.5rem;
 }
 
 .switch {
@@ -141,5 +140,5 @@ h2 {
 }
 
 .switch label {
-  font-size: 1.5rem;
+  font-size: 2rem;
 }
