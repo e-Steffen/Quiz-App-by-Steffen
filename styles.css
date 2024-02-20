@@ -68,6 +68,10 @@ body {
   width: 2rem;
 }
 
+.bookmark img:hover {
+  width: 4rem;
+}
+
 .tags {
   display: flex;
   justify-content: flex-start;
