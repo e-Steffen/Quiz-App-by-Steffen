@@ -7,8 +7,8 @@
     <link rel="stylesheet" href="/styles.css" />
   </head>
   <body>
-    <header>
-      <section class="app-Title">Quiz App</section>
+    <header aria-labelledby="title">
+      <section class="app-Title" id="title">Quiz App</section>
     </header>
 
     <main class="info">
@@ -25,19 +25,20 @@
         <h2>settings</h2>
         <article class="switch">
           <label for="mode">Dark-Mode</label>
-            <input type="checkbox" id="mode"></>
-
+          <input type="checkbox" id="mode" aria-checked="false" />
         </article>
       </section>
     </main>
     <footer>
-      <nav class="navi">
-        <a href="/index.html" title="Home"><img src="/images/home.png" / width="75px"></a>
+      <nav class="navi" role="navigation">
+        <a href="/index.html" title="Home"
+          ><img src="/images/home.png" / width="75px" alt="Navigation to Home-Button"></a
+        >
         <a href="/bookmarks.html" title="bookmarks"
-          ><img src="/images/bookmark.png" / width="75px"></a
+          ><img src="/images/bookmark.png" / width="75px" alt="Navigation to Bookmarks-Button"></a
         >
         <a class="current" href="/profile.html" title="Profile"
-          ><img src="/images/Profile.png" / width="75px"></a
+          ><img src="/images/Profile.png" / width="75px" alt="Navigation to Profile Button"></a
         >
       </nav>
     </footer>

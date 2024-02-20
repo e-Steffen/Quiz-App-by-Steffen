@@ -7,46 +7,50 @@
     <link rel="stylesheet" href="/styles.css" />
   </head>
   <body>
-    <header>
-      <section class="app-Title">Quiz App</section>
+    <header aria-labelledby="title">
+      <section class="app-Title" id="title">Quiz App</section>
     </header>
 
     <main class="card-frame">
       <section class="cards">
         <p>What property flips the axes in flexbox?</p>
-        <button class="button" id="show-answer">Show Answer</button>
-        <button class="bookmark" id="save-bookmark">
+        <button class="button" aria-label="button to show answer">Show Answer</button>
+        <button class="bookmark" aria-label="bookmark-button">
           <img src="/images/bookmark-blank.png" alt="bookmark-icon" />
         </button>
-        <ul class="tags">
-          <li>#html</li>
-          <li>#flexbox</li>
-          <li>#css</li>
+        <ul class="tags" aria-labelledby="assigned topic tags">
+          <li id="assigned topic tags">#html</li>
+          <li id="assigned topic tags">#flexbox</li>
+          <li id="assigned topic tags">#css</li>
         </ul>
       </section>
 
       <section class="cards">
         <p>What does align-items do?</p>
-        <button class="button" id="show-answer">Show Answer</button>
-        <button class="bookmark" id="save-bookmark">
+        <button class="button" id="show-answer" aria-label="button to show answer">
+          Show Answer
+        </button>
+        <button class="bookmark" id="save-bookmark" aria-label="bookmark-button">
           <img src="/images/bookmark.png" alt="bookmark-icon" />
         </button>
-        <ul class="tags">
-          <li>#html</li>
-          <li>#flexbox</li>
-          <li>#css</li>
+        <ul class="tags" aria-labelledby="assigned topic tags">
+          <li id="assigned topic tags">#html</li>
+          <li id="assigned topic tags">#flexbox</li>
+          <li id="assigned topic tags">#css</li>
         </ul>
       </section>
     </main>
     <footer>
-      <nav class="navi">
+      <nav class="navi" role="navigation">
         <a class="current" href="/index.html" title="Home"
-          ><img src="/images/home.png" / width="75px"></a
+          ><img src="/images/home.png" / width="75px" alt="Navigation to Home-Button"></a
         >
         <a href="/bookmarks.html" title="bookmarks"
-          ><img src="/images/bookmark.png" / width="75px"></a
+          ><img src="/images/bookmark.png" / width="75px" alt="Navigation to Bookmarks-Button"></a
         >
-        <a href="/profile.html" title="Profile"><img src="/images/Profile.png" / width="75px"></a>
+        <a href="/profile.html" title="Profile"
+          ><img src="/images/Profile.png" / width="75px" alt="Navigation to Profile Button"></a
+        >
       </nav>
     </footer>
   </body>
