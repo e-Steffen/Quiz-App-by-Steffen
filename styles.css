@@ -5,8 +5,14 @@
   font-family: "Courier New", Courier, monospace;
 }
 
+body {
+  margin-bottom: 12rem;
+}
+
 .app-Title {
   display: flex;
+  margin: 0 auto;
+  top: 0;
   background-color: black;
   position: fixed;
   width: 98%;
@@ -15,6 +21,7 @@
   font-size: 3.5rem;
   color: rgb(201, 232, 232);
   padding: 0.8rem;
+  z-index: 2;
 }
 
 .app-Title p {
@@ -32,7 +39,7 @@
 .cards {
   display: grid;
   border: 0.1875rem solid black;
-  height: 22rem;
+  height: fit-content;
   width: 45%;
   margin-top: 9%;
   padding: 2rem;
@@ -48,6 +55,7 @@
   font-size: 2rem;
   font-weight: 800;
   color: rgb(64, 29, 169);
+  cursor: pointer;
 }
 
 .bookmark {
@@ -78,8 +86,8 @@
 
 .navi {
   display: inline-flex;
-  position: absolute;
-  bottom: 5px;
+  position: fixed;
+  bottom: 0;
   width: 80%;
   margin-left: 10%;
   margin-right: 10%;
@@ -88,4 +96,46 @@
 
 .current {
   background-color: rgb(64, 29, 169);
+}
+
+.info {
+  display: grid;
+  width: 60%;
+  height: fit-content;
+  flex-wrap: wrap;
+  position: relative;
+  padding-top: 10rem;
+
+  margin-inline: auto;
+  justify-content: flext-start;
+  align-items: center;
+}
+
+.about-me p {
+  color: rgb(64, 29, 169);
+  font-size: 1.5rem;
+}
+
+.about-me li {
+  list-style: none;
+  display: inline-flex;
+  padding-right: 1.5rem;
+  font-size: 1rem;
+}
+
+.settings {
+  justify-content: flex-start;
+}
+
+h2 {
+  font-size: 1rem;
+}
+
+.switch {
+  position: relative;
+  color: rgb(64, 29, 169);
+}
+
+.switch label {
+  font-size: 1.5rem;
 }
