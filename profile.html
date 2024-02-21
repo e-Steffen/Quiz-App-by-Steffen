@@ -5,13 +5,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Quiz-App by Steffen</title>
     <link rel="stylesheet" href="/styles.css" />
+    <script src="/js/script.js" defer></script>
   </head>
   <body>
     <header aria-labelledby="title">
-      <section class="app-Title" id="title">Quiz App</section>
+      <section class="app-Title" id="title" data-js="title">Quiz App</section>
     </header>
 
-    <main class="info">
+    <main class="info" data-js="mainFrame">
       <section class="about-me">
         <h2>About me</h2>
         <p>I'm a Quiz loving human, who invest some time in coding for online-Quizes</p>
@@ -25,7 +26,7 @@
         <h2>settings</h2>
         <article class="switch">
           <label for="mode">Dark-Mode</label>
-          <input type="checkbox" id="mode" aria-checked="false" />
+          <input type="checkbox" id="mode" aria-checked="false" data-js="modeBtn"/>
         </article>
       </section>
     </main>

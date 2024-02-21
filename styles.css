@@ -9,6 +9,11 @@ body {
   margin-bottom: 12rem;
 }
 
+body.dark {
+  background-color: rgb(52, 52, 52);
+  color: aquamarine;
+}
+
 .app-Title {
   display: flex;
   margin: 0 auto;
@@ -26,6 +31,10 @@ body {
 
 .app-Title p {
   font-size: 3.5rem;
+}
+
+.app-Title.color {
+  background-color: rgb(64, 29, 169);
 }
 
 .card-frame {
