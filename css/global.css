@@ -1,0 +1,49 @@
+*,
+::before,
+::after {
+  font-size: clamp(0.5rem, 0.3301rem + 0.7249vw, 1.2rem);
+  background-color: rgb(201, 232, 232);
+  box-sizing: border-box;
+  font-family: "Courier New", Courier, monospace;
+}
+
+:root {
+  --title-bg-color: rgb(0, 0, 0);
+  --central-texting-font-size: 2rem; 
+}
+
+body {
+  margin-bottom: 12rem;
+}
+
+body.dark {
+  background-color: rgb(52, 52, 52);
+  color: aquamarine;
+}
+
+h2 {
+  font-size: 1.5rem;
+}
+
+.app-Title {
+    display: flex;
+    margin: 0 auto;
+    top: 0;
+    background-color: var(--title-bg-color);
+    position: fixed;
+    width: 98%;
+    left: 1%;
+    justify-content: center;
+    font-size: 3.5rem;
+    color: rgb(201, 232, 232);
+    padding: 0.8rem;
+    z-index: 2;
+  }
+  
+  .app-Title p {
+    font-size: 3.5rem;
+  }
+  
+  .app-Title.colored {
+    background-color: rgb(64, 29, 169);
+  }
