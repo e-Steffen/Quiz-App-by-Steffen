@@ -1,0 +1,42 @@
+@import "../css/global.css";
+@import "../css/components/bookmarks.css";
+@import "/css/components/cards.css";
+@import "/css/components/button.css";
+@import "/css/components/navigation.css";
+
+.info {
+  display: grid;
+  width: 60%;
+  height: fit-content;
+  flex-wrap: wrap;
+  position: relative;
+  padding-top: 10rem;
+  margin-inline: auto;
+  justify-content: flext-start;
+  align-items: center;
+}
+
+.about-me p {
+  color: rgb(64, 29, 169);
+  font-size: var(--central-texting-font-size);
+}
+
+.about-me li {
+  list-style: none;
+  display: inline-flex;
+  padding-right: 1.5rem;
+  font-size: 1.5rem;
+}
+
+.settings {
+  justify-content: flex-start;
+}
+
+.switch {
+  position: relative;
+  color: rgb(64, 29, 169);
+}
+
+.switch label {
+  font-size: var(--central-texting-font-size);
+}

@@ -1,0 +1,14 @@
+nav {
+    display: inline-flex;
+    position: fixed;
+    bottom: 0;
+    width: 80%;
+    margin-left: 10%;
+    margin-right: 10%;
+    justify-content: space-between;
+  }
+  
+  .current {
+    background-color: rgb(64, 29, 169);
+  }
+  

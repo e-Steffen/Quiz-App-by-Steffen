@@ -1,11 +1,11 @@
 const grabTitle = document.querySelector('[data-js="title"]');
 
 grabTitle.addEventListener("mousedown", () => {
-  grabTitle.classList.add("color");
+  grabTitle.classList.add("colored");
 });
 
 grabTitle.addEventListener("mouseup", () => {
-  grabTitle.classList.remove("color");
+  grabTitle.classList.remove("colored");
 });
 
 const darkModeButton = document.querySelector('[data-js="modeBtn"]');
