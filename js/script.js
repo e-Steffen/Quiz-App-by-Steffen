@@ -15,6 +15,11 @@ showAnswerComesSoon.forEach((adressAllButtons) => {
   });
 });
 
+//doesn't working yet >> Why?
+const getNumberofCards = document.getElementsByClassName("cards");
+const numberofQuestions = getNumberofCards.length;
+console.log(`We collected ${numberofQuestions} Questions so far.`);
+
 const darkModeButton = document.querySelector('[data-js="modeButton"]');
 
 darkModeButton.addEventListener("click", () => {
