@@ -1,3 +1,4 @@
+// color-changing title
 const grabTitle = document.querySelector('[data-js="title"]');
 
 grabTitle.addEventListener("mousedown", () => {
@@ -8,6 +9,7 @@ grabTitle.addEventListener("mouseup", () => {
   grabTitle.classList.remove("colored");
 });
 
+// set alert for answer-buttons
 const showAnswerComesSoon = document.querySelectorAll('[data-js="answerButton"]');
 showAnswerComesSoon.forEach((adressAllButtons) => {
   adressAllButtons.addEventListener("click", () => {
@@ -16,10 +18,11 @@ showAnswerComesSoon.forEach((adressAllButtons) => {
 });
 
 //doesn't working yet >> Why?
-const getNumberofCards = document.getElementsByClassName("cards");
-const numberofQuestions = getNumberofCards.length;
-console.log(`We collected ${numberofQuestions} Questions so far.`);
+const getNumberOfCards = document.getElementsByClassName("cards");
+const numberOfQuestions = getNumberOfCards.length;
+console.log(`We collected ${numberOfQuestions} Questions so far.`);
 
+// set alert for dark mode Button
 const darkModeButton = document.querySelector('[data-js="modeButton"]');
 
 darkModeButton.addEventListener("click", () => {
