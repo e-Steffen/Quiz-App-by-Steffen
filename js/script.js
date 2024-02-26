@@ -17,10 +17,14 @@ showAnswerComesSoon.forEach((adressAllButtons) => {
   });
 });
 
-//doesn't working yet >> Why?
+// get number of collected Questions (by cards)
 const getNumberOfCards = document.getElementsByClassName("cards");
 const numberOfQuestions = getNumberOfCards.length;
+// for testing:
 console.log(`We collected ${numberOfQuestions} Questions so far.`);
+
+const grabcountedQuestions = document.querySelector('[data-js="countedQuestions"]');
+grabcountedQuestions.innerHTML = `We collected ${numberOfQuestions} Questions so far.`;
 
 // set alert for dark mode Button
 const darkModeButton = document.querySelector('[data-js="modeButton"]');

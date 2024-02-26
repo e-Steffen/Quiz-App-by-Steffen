@@ -21,7 +21,8 @@
   font-size: var(--central-texting-font-size);
 }
 
-.about-me li {
+.about-me li,
+.about-me li span {
   list-style: none;
   display: inline-flex;
   padding-right: 1.5rem;
