@@ -22,9 +22,9 @@ const grabGreeting = document.querySelector('[data-js="greeting-message"]');
 const greetingTimeDependent = () => {
   const currentTime = new Date();
   const hours = currentTime.getHours();
-  if (hours.value > 12) {
+  if (hours > 11) {
     grabGreeting.textContent = "Good Afternoon - Time to play a quiz!";
-  } else if (hours.value > 18) {
+  } else if (hours > 18) {
     grabGreeting.textContent = "Good Evening - Time to play a quiz!";
   } else grabGreeting.textContent = "Good Morning - Time to play a quiz!";
 };
