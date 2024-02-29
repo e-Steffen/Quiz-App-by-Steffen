@@ -17,6 +17,20 @@ showAnswerComesSoon.forEach((adressAllButtons) => {
   });
 });
 
+const grabGreeting = document.querySelector('[data-js="greeting-message"]');
+
+const greetingTimeDependent = () => {
+  const currentTime = new Date();
+  const hours = currentTime.getHours();
+  if (hours.value > 12) {
+    grabGreeting.textContent = "Good Afternoon - Time to play a quiz!";
+  } else if (hours.value > 18) {
+    grabGreeting.textContent = "Good Evening - Time to play a quiz!";
+  } else grabGreeting.textContent = "Good Morning - Time to play a quiz!";
+};
+
+greetingTimeDependent();
+
 // get number of collected Questions (by cards)
 // Problem: ClassName liest nur die Elemente auf der profile.html aus und dort sind keine Cards, man müsste mit AJAX
 // oder anderem arbeiten >> daher unten stehende Lösung via speichern als Cookie in localStorage
@@ -39,7 +53,7 @@ if (window.location.pathname === "/index.html" || window.location.pathname === "
   // Auf die gespeicherte Anzahl der "cards" zugreifen, während auf profile.html
   const numberOfCards = localStorage.getItem("numberOfCards");
 
-  // Geben Sie die Anzahl der "cards" auf der Seite aus
+  // Anzahl der "cards" auf der Seite ausgeben
   const grabCountedQuestions = document.querySelector('[data-js="countedQuestions"]');
   grabCountedQuestions.textContent = `We collected ${numberOfCards} Questions so far.`;
 }
@@ -54,8 +68,10 @@ if (window.location.pathname === "/bookmarks.html") {
 }
 
 // set alert for dark mode Button
-const darkModeButton = document.querySelector('[data-js="modeButton"]');
+if (window.location.pathname === "/profile.html") {
+  const darkModeButton = document.querySelector('[data-js="modeButton"]');
 
-darkModeButton.addEventListener("click", () => {
-  alert("This feature will coming soon.");
-});
+  darkModeButton.addEventListener("click", () => {
+    alert("This feature will coming soon.");
+  });
+}
