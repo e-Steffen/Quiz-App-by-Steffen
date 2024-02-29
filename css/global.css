@@ -11,6 +11,7 @@
   --title-bg-color: rgb(0, 0, 0);
   --central-texting-font-size: 2rem;
   --title-text-color: rgb(201, 232, 232);
+  --dark-mode-title-bg-color: rgb(255, 255, 255);
 }
 
 body {
@@ -51,26 +52,32 @@ h2 {
 
 .greeting {
   position: relative;
-  height: 5vh; 
-  
+  height: 5vh;
 }
 
 .greeting p {
   background-color: var(--title-bg-color);
   position: absolute;
   right: -30vw;
-  width: 17vw; 
+  width: 17vw;
   font-size: 0.8rem;
-  
 }
 
 @media screen and (min-width: 1200px) {
-    .greeting p {
-        
-        right: -35vw;
-        width: 20vw; 
-        font-size: 1rem;
-        
-      }
+  .greeting p {
+    right: -35vw;
+    width: 20vw;
+    font-size: 1rem;
+  }
+}
 
+@media screen and (prefers-color-scheme: dark) {
+  .app-Title {
+    background-color: var(--dark-mode-title-bg-color);
+    color: var(--title-bg-color);
+  }
+  .greeting p {
+    background-color: var(--dark-mode-title-bg-color);
+    color: var(--title-bg-color);
+  }
 }
