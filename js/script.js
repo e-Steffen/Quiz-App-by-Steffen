@@ -72,6 +72,8 @@ if (window.location.pathname === "/profile.html") {
   const darkModeButton = document.querySelector('[data-js="modeButton"]');
 
   darkModeButton.addEventListener("click", () => {
-    alert("This feature will coming soon.");
+    alert(
+      "This feature will coming soon. However, you can use your browser or system settings to view the Quiz App in dark mode. "
+    );
   });
 }

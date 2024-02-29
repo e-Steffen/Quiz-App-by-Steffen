@@ -20,3 +20,11 @@
     border-radius: 10%;
     font-size: 1.2rem;
   }
+
+  @media screen and (prefers-color-scheme: dark) {
+    .button {
+      background-color: var(--dark-mode-bg-color);
+      color: var(--dark-mode-button-text-current-color);
+    }
+    
+  }
