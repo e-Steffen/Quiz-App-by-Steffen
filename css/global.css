@@ -9,7 +9,8 @@
 
 :root {
   --title-bg-color: rgb(0, 0, 0);
-  --central-texting-font-size: 2rem; 
+  --central-texting-font-size: 2rem;
+  --title-text-color: rgb(201, 232, 232);
 }
 
 body {
@@ -26,24 +27,50 @@ h2 {
 }
 
 .app-Title {
-    display: flex;
-    margin: 0 auto;
-    top: 0;
-    background-color: var(--title-bg-color);
-    position: fixed;
-    width: 98%;
-    left: 1%;
-    justify-content: center;
-    font-size: 3.5rem;
-    color: rgb(201, 232, 232);
-    padding: 0.8rem;
-    z-index: 2;
-  }
+  display: flex;
+  margin: 0 auto;
+  top: 0;
+  background-color: var(--title-bg-color);
+  position: fixed;
+  width: 98%;
+  left: 1%;
+  justify-content: center;
+  font-size: 3.5rem;
+  color: var(--title-text-color);
+  padding: 0.8rem;
+  z-index: 2;
+}
+
+.app-Title p {
+  font-size: 3.5rem;
+}
+
+.app-Title.colored {
+  background-color: rgb(64, 29, 169);
+}
+
+.greeting {
+  position: relative;
+  height: 5vh; 
   
-  .app-Title p {
-    font-size: 3.5rem;
-  }
+}
+
+.greeting p {
+  background-color: var(--title-bg-color);
+  position: absolute;
+  right: -30vw;
+  width: 17vw; 
+  font-size: 0.8rem;
   
-  .app-Title.colored {
-    background-color: rgb(64, 29, 169);
-  }
+}
+
+@media screen and (min-width: 1200px) {
+    .greeting p {
+        
+        right: -35vw;
+        width: 20vw; 
+        font-size: 1rem;
+        
+      }
+
+}

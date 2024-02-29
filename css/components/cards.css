@@ -10,8 +10,8 @@
   display: grid;
   border: 0.1875rem solid black;
   height: fit-content;
-  width: 45%;
-  margin-top: 9%;
+  width: 70vw;
+  margin-top: 9vh;
   padding: 2rem;
   position: relative;
   border-radius: 2%;
@@ -20,4 +20,15 @@
 .cards p {
   font-size: 2.5rem;
   font-weight: 700;
+}
+@media screen and (min-width: 600px) {
+  .cards {
+    width: 60vw;
+  }
+}
+
+@media screen and (min-width: 900px) {
+  .cards {
+    width: 45vw;
+  }
 }
