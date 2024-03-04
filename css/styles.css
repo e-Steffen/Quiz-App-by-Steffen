@@ -32,6 +32,12 @@
   font-size: var(--central-texting-font-size);
 }
 
+@media screen and (prefers-color-scheme: dark) {
+  .about-me p {
+    color: var(--dark-mode-button-text-current-color);
+  }
+}
+
 .about-me li,
 .about-me li span {
   list-style: none;
@@ -42,11 +48,6 @@
 
 .settings {
   justify-content: flex-start;
-}
-
-.switch {
-  position: relative;
-  color: rgb(64, 29, 169);
 }
 
 .switch label {

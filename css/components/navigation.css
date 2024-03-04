@@ -17,3 +17,9 @@ nav {
     margin-left: 20%;
   }
 }
+
+@media screen and (prefers-color-scheme: dark) {
+  .current {
+    background-color: var(--dark-mode-button-text-current-color);
+  }
+}

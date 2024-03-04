@@ -11,7 +11,9 @@
   --title-bg-color: rgb(0, 0, 0);
   --central-texting-font-size: 2rem;
   --title-text-color: rgb(201, 232, 232);
-  --dark-mode-title-bg-color: rgb(255, 255, 255);
+  --dark-mode-bg-color: rgb(94, 70, 70);
+  --dark-mode-text-color: rgb(201, 232, 232);
+  --dark-mode-button-text-current-color: rgb(231, 164, 245);
 }
 
 body {
@@ -72,12 +74,10 @@ h2 {
 }
 
 @media screen and (prefers-color-scheme: dark) {
-  .app-Title {
-    background-color: var(--dark-mode-title-bg-color);
-    color: var(--title-bg-color);
-  }
-  .greeting p {
-    background-color: var(--dark-mode-title-bg-color);
-    color: var(--title-bg-color);
+  *,
+  ::before,
+  ::after {
+    background-color: var(--dark-mode-bg-color);
+    color: var(--dark-mode-text-color);
   }
 }
