@@ -9,7 +9,7 @@ grabTitle.addEventListener("mouseup", () => {
   grabTitle.classList.remove("colored");
 });
 
-// set alert for answer-buttons
+// set alert for answer-buttons - unnecessary because add funtionality 
 // const showAnswerComesSoon = document.querySelectorAll('[data-js="answerButton"]');
 // showAnswerComesSoon.forEach((adressAllButtons) => {
 //   adressAllButtons.addEventListener("click", () => {
@@ -17,6 +17,8 @@ grabTitle.addEventListener("mouseup", () => {
 //   });
 // });
 
+
+//time-dependent greeting-message
 const grabGreeting = document.querySelector('[data-js="greeting-message"]');
 
 const greetingTimeDependent = () => {
@@ -97,5 +99,3 @@ toggleAnswer.addEventListener("click", () => {
     toggleAnswer.innerHTML = "Hide Answer";
   }
 });
-
-
