@@ -10,12 +10,12 @@ grabTitle.addEventListener("mouseup", () => {
 });
 
 // set alert for answer-buttons
-const showAnswerComesSoon = document.querySelectorAll('[data-js="answerButton"]');
-showAnswerComesSoon.forEach((adressAllButtons) => {
-  adressAllButtons.addEventListener("click", () => {
-    alert("Sorry, no function yet, this is coming soon.");
-  });
-});
+// const showAnswerComesSoon = document.querySelectorAll('[data-js="answerButton"]');
+// showAnswerComesSoon.forEach((adressAllButtons) => {
+//   adressAllButtons.addEventListener("click", () => {
+//     alert("Sorry, no function yet, this is coming soon.");
+//   });
+// });
 
 const grabGreeting = document.querySelector('[data-js="greeting-message"]');
 
@@ -77,3 +77,25 @@ if (window.location.pathname === "/profile.html") {
     );
   });
 }
+
+// set toggle-function to bookmark
+
+const bookmarkButton = document.querySelector(".bookmark");
+bookmarkButton.addEventListener("click", () => {
+  bookmarkButton.classList.toggle("toggle");
+});
+
+// toggle answer button
+
+const toggleAnswer = document.querySelector('[data-js="answerButton"]');
+const answerText = document.querySelector('[data-js="showAnswer"]');
+toggleAnswer.addEventListener("click", () => {
+  answerText.classList.toggle("hidden");
+  if (toggleAnswer.innerHTML === "Hide Answer") {
+    toggleAnswer.innerHTML = "Show Answer";
+  } else {
+    toggleAnswer.innerHTML = "Hide Answer";
+  }
+});
+
+

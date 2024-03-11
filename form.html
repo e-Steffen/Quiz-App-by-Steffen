@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Quiz-App by Steffen</title>
+    <link rel="stylesheet" href="/css/styles.css" />
+    <script src="/js/form.js" defer></script>
+  </head>
+  <body>
+    <header aria-labelledby="title">
+      <section class="app-Title" id="title" data-js="title">
+        Quiz App
+        <aside class="greeting"><p data-js="greeting-message"></p></aside>
+      </section>
+    </header>
+
+    <main>
+      <form data-js="form" aria-labelledby="add  a new Question to the Quiz">
+        <fieldset>
+          <legend>Your Question</legend>
+          <textarea
+            data-js="textInput"
+            name="newQuestion"
+            id="newQuestion"
+            cols="30"
+            rows="10"
+            maxlength="150"
+            required
+          ></textarea>
+          <p data-js="character-count"></p>
+        </fieldset>
+        <fieldset>
+          <legend>Your Anwer</legend>
+          <textarea
+            data-js="textInput"
+            name="newAnswer"
+            id="newAnswer"
+            cols="30"
+            rows="10"
+            maxlength="150"
+            required
+          ></textarea>
+          <p data-js="character-count"></p>
+        </fieldset>
+        <fieldset>
+          <legend>Tag</legend>
+          <input type="text" name="newTag" id="newTag" required />
+        </fieldset>
+
+        <button type="submit" data-js="addQuestionSubmit">Submit</button>
+      </form>
+    </main>
+    <footer>
+      <nav role="navigation">
+        <a href="/index.html" title="Home"
+          ><img src="/images/home.png" / width="55px" alt="Navigation to Home-Button"></a
+        >
+        <a href="/bookmarks.html" title="bookmarks"
+          ><img src="/images/bookmark.png" / width="55px" alt="Navigation to Bookmarks-Button"></a
+        >
+        <a class="current" href="/form.html" title="addNewCard"
+          ><img src="/images/addNew.png" / width="55px" alt="Navigation to Profile Button"></a
+        >
+        <a href="/profile.html" title="Profile"
+          ><img src="/images/Profile.png" / width="55px" alt="Navigation to Profile Button"></a
+        >
+      </nav>
+    </footer>
+  </body>
+</html>

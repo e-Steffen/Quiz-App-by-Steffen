@@ -21,6 +21,13 @@
   font-size: 2.5rem;
   font-weight: 700;
 }
+
+.hidden {
+  display: none;
+}
+
+
+
 @media screen and (min-width: 600px) {
   .cards {
     width: 60vw;

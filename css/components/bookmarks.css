@@ -1,13 +1,17 @@
 .bookmark {
-    position: absolute;
-    right: -1rem;
-    top: 1rem;
-  }
-  
-  .bookmark img {
-    width: 2rem;
-  }
-  
-  .bookmark img:hover {
-    width: 4rem;
-  }
+  position: absolute;
+  right: -1rem;
+  top: 1rem;
+}
+
+.bookmark img {
+  width: 2rem;
+}
+
+.bookmark img:hover {
+  width: 4rem;
+}
+
+.toggle {
+  border: 0.5rem solid red;
+}
