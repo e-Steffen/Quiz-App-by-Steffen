@@ -2,16 +2,45 @@
   position: absolute;
   right: -1rem;
   top: 1rem;
+  width: 3.125rem;
+  height: 3.125rem;
+  background-image: url(/images/bookmark-blank.png);
+  background-size: cover;
+}
+.bookmark-set {
+  position: absolute;
+  right: -1rem;
+  top: 1rem;
+  width: 3.125rem;
+  height: 3.125rem;
+  background-image: url(/images/bookmark.png);
+  background-size: cover;
 }
 
-.bookmark img {
-  width: 2rem;
-}
-
-.bookmark img:hover {
+.bookmark:hover {
   width: 4rem;
+  height: 4rem;
+}
+.bookmark-set:hover {
+  width: 4rem;
+  height: 4rem;
 }
 
-.toggle {
-  border: 0.5rem solid red;
+.toggle-bookmark {
+  position: absolute;
+  right: -1rem;
+  top: 1rem;
+  width: 3.125rem;
+  height: 3.125rem;
+  background-image: url("/images/bookmark.png");
+  background-size: cover;
+}
+.toggle-bookmark-set {
+  position: absolute;
+  right: -1rem;
+  top: 1rem;
+  width: 3.125rem;
+  height: 3.125rem;
+  background-image: url("/images/bookmark-blank.png");
+  background-size: cover;
 }

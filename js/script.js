@@ -9,14 +9,13 @@ grabTitle.addEventListener("mouseup", () => {
   grabTitle.classList.remove("colored");
 });
 
-// set alert for answer-buttons - unnecessary because add funtionality 
+// set alert for answer-buttons - unnecessary because add funtionality
 // const showAnswerComesSoon = document.querySelectorAll('[data-js="answerButton"]');
 // showAnswerComesSoon.forEach((adressAllButtons) => {
 //   adressAllButtons.addEventListener("click", () => {
 //     alert("Sorry, no function yet, this is coming soon.");
 //   });
 // });
-
 
 //time-dependent greeting-message
 const grabGreeting = document.querySelector('[data-js="greeting-message"]');
@@ -84,7 +83,7 @@ if (window.location.pathname === "/profile.html") {
 
 const bookmarkButton = document.querySelector(".bookmark");
 bookmarkButton.addEventListener("click", () => {
-  bookmarkButton.classList.toggle("toggle");
+  bookmarkButton.classList.toggle("toggle-bookmark");
 });
 
 // toggle answer button

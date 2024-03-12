@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Quiz-App by Steffen</title>
     <link rel="stylesheet" href="/css/styles.css" />
-    <script src="/js/script.js" defer></script>
+    <script src="/js/bookmarks.js" defer></script>
   </head>
   <body>
     <header aria-labelledby="title">
@@ -18,12 +18,11 @@
     <main class="card-frame" data-js="mainFrame">
       <section class="cards">
         <p>WWhich position-property is the dfault one?</p>
+        <p class="hidden" data-js="showAnswer">The answer is "static".</p>
         <button class="button" aria-label="button to show answer" data-js="answerButton">
           Show Answer
         </button>
-        <button class="bookmark" aria-label="bookmark-button">
-          <img src="/images/bookmark.png" alt="bookmark-icon" />
-        </button>
+        <button class="bookmark-set" aria-label="bookmark-button"></button>
         <ul class="tags" aria-labelledby="assigned topic tags">
           <li>#html</li>
           <li>#flexbox</li>
@@ -36,9 +35,7 @@
         <button class="button" aria-label="button to show answer" data-js="answerButton">
           Show Answer
         </button>
-        <button class="bookmark" aria-label="bookmark-button">
-          <img src="/images/bookmark.png" alt="bookmark-icon" />
-        </button>
+        <button class="bookmark-set" aria-label="bookmark-button"></button>
         <ul class="tags" aria-labelledby="assigned topic tags">
           <li>#html</li>
           <li>#flexbox</li>

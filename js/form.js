@@ -56,7 +56,12 @@ form.addEventListener("submit", (input) => {
 
   const bookmarkButton = document.querySelector(".bookmark");
   bookmarkButton.addEventListener("click", () => {
-    bookmarkButton.classList.toggle("toggle");
+    bookmarkButton.classList.toggle("toggle-bookmark");
+  });
+
+  const setBookmarkButton = document.querySelector(".bookmark-set");
+  setBookmarkButton.addEventListener("click", () => {
+    setBookmarkButton.classList.toggle("toggle-bookmark-set");
   });
 
   // toggle answer button
