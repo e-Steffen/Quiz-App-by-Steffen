@@ -26,8 +26,6 @@
   display: none;
 }
 
-
-
 @media screen and (min-width: 600px) {
   .cards {
     width: 60vw;
